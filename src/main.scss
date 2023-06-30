@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+$fsm : 'Jost', sans-serif;
+$fsb : 700;
+$ps_color : #606060;
+$light : #FFF5EF;
+$brand : #FF6B00;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+a {
+  text-decoration: none;
+  color: black;
+}
+
+body {
+  font-family: $fsm;
+  font-weight: 400;
+  overflow-x: hidden;
+  font-size: 20px;
+}
+h1, h2 {
+  font-weight: $fsb;
+}
+
+.ns-head-section {
+  .ns-head-background-section {
+    background-color: $light;
+    padding: 0 2rem;
+    .ns-head-title {
+      margin-top: 6rem;
+      h1 {
+        font-size: 55px;
+        line-height: 1.2em;
+        font-weight: 900;
+        // max-width: 700px;
+        span {
+          color: $brand;
+        }
+      }
+      p.ns-paragraph-top {
+        font-size: 20px;
+        font-weight: 500;
+      }
+      p.ns-paragraph-bottom {
+        color: $ps_color;
+        line-height: 1.7em;
+        font-size: 1.4rem;
+      }
+      a.btn {
+        background-color: $brand;
+        padding: 10px 26px;
+        font-size: 1.6rem;
+        color: white;
+      }
+    }
+  }
+}
+
+.ns-about-setion {
+  .ns-about-background {
+    .ns-about-title {
+      p {
+        margin-bottom: 0;
+        
+      }
+    }
+    .ns-about-heading-section {
+      h1 {
+        font-size: 55px;
+        
+      }
+    }
+  }
+}
+
+.ns-services-section {
+  .ns-services-background-section {
+    .ns-service-title{
+      .ns-title-service {
+        margin-bottom: 0;
+      }
+    }
+    .ns-service-heading h1 {
+      font-size: 55px;
+    }
+    .ns-services-list {
+      .ns-services-item {
+        width: 98% !important;
+        .card {
+        border: 3px solid $brand;
+        }
+        i { 
+          font-size: 55px;
+          color: $brand;
+        }
+      }
+    }
+  }
+  
+}
