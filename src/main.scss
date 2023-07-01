@@ -101,3 +101,73 @@ h1, h2 {
   }
   
 }
+.ns-reusume-secction {
+  .ns-study {
+    p {
+      font-size: 16px;
+      span {
+        color: $brand;
+      }
+    }
+  }
+  .working-date {
+    color: $brand;
+    font-size: 16px;
+  }
+}
+.ns-project-list {
+  .ns-select-list {
+    gap: 8px;
+    button.ns-select-project {
+      background-color: $brand;
+    }
+  }
+}
+.ns-list-all-project {
+  .ns-start-project {
+    margin: 10px 0;
+  }
+  .ns-list-project-data {
+    overflow: hidden;
+    border-radius: 10px;
+    &:hover {
+       .ns-project-list-img {
+        transition: 1s;
+        transform: scale(1.3, 1.3);
+      }
+      .ns-project-details {
+        transition: 1s;
+        opacity: 1;
+      }
+    }
+    .ns-project-list-img {
+      z-index: 1;
+      img {
+        width: 100%;
+        height: 500px;
+        object-fit: cover;
+      }
+    }
+    .ns-project-details {
+      z-index: 3;
+      transition: 1s;
+      opacity: 0;
+      top : 50%;
+      left: 50%;
+      transform: translate( -50%, -50% );
+      color: $brand;
+      a {
+        color: white;
+        padding: 8px 20px;
+        background-color: $brand;
+        border-radius: 10px;
+      }
+    }
+    .ns-project-img-hover {
+      width: 20px;
+      height: 20px;
+      background-color: $brand;
+      z-index: 2;
+    }
+  }
+}
